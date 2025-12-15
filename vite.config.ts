@@ -5,6 +5,7 @@ import Unocss from 'unocss/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 import VueRouter from 'unplugin-vue-router/vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 import { defineConfig } from 'vite'
 
@@ -50,6 +51,7 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
     Unocss(),
+    vueDevTools(),
   ],
 
   ssr: {

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { repository } from '~/../package.json'
 
 import { toggleDark } from '~/composables'
 </script>
@@ -54,12 +53,6 @@ import { toggleDark } from '~/composables'
       >
         <i inline-flex i="dark:ep-moon ep-sunny" />
       </button>
-    </el-menu-item>
-
-    <el-menu-item h="full">
-      <a class="size-full flex items-center justify-center" :href="repository.url" target="_blank">
-        <div i-ri-github-fill />
-      </a>
     </el-menu-item>
   </el-menu>
 </template>
