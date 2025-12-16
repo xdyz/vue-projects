@@ -30,9 +30,11 @@ export default defineConfig({
     Vue(),
 
     // https://github.com/posva/unplugin-vue-router
+    // 根据目录接口约定路由
     VueRouter({
       extensions: ['.vue', '.md'],
       dts: 'src/typed-router.d.ts',
+      routesDir: 'src/pages',
     }),
 
     Components({
